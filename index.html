@@ -4,232 +4,295 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Saurav Srivastav — Cloud & DevSecOps Leader. 12+ years Azure, Kubernetes, Entra ID, Zero Trust, Terraform, SRE, MLOps. Dubai UAE.">
-<meta name="keywords" content="Saurav Srivastav, Cloud Engineer Dubai, DevSecOps, Azure, Kubernetes, AKS, Entra ID, Zero Trust, Terraform, SRE, MLOps, UAE">
-<title>Saurav Srivastav — Cloud & DevSecOps Leader | Dubai, UAE</title>
+<title>Saurav Srivastav — Cloud & DevSecOps Leader</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --blue: #0062cc;
-  --blue-light: #e8f0fe;
-  --dark: #0f1923;
-  --text: #2d3748;
-  --muted: #718096;
-  --border: #e2e8f0;
-  --bg: #f7f8fc;
+  --gold: #b8973e;
+  --gold-light: #f5edd6;
+  --dark: #0d0d0d;
+  --charcoal: #1a1a1a;
+  --ink: #2c2c2c;
+  --text: #3d3d3d;
+  --muted: #888;
+  --faint: #bbb;
+  --line: #e5e0d8;
+  --bg: #faf9f7;
   --white: #ffffff;
-  --accent: #c8903a;
+  --blue: #1a4fa0;
 }
 
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
   font-size: 14px;
+  -webkit-font-smoothing: antialiased;
 }
+
+/* SCROLLBAR */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 2px; }
 
 /* NAV */
 nav {
   position: fixed; top: 0; width: 100%; z-index: 100;
   background: var(--dark);
-  padding: 0 3rem; height: 52px;
+  padding: 0 3rem; height: 50px;
   display: flex; align-items: center; justify-content: space-between;
 }
-.nav-logo { color: #fff; font-weight: 600; font-size: 14px; text-decoration: none; letter-spacing: 0.5px; }
-.nav-logo span { color: #60a5fa; }
-.nav-right { display: flex; align-items: center; gap: 2rem; }
-.nav-links { display: flex; gap: 0; list-style: none; }
-.nav-links a { color: #94a3b8; text-decoration: none; font-size: 12px; font-weight: 500; padding: 4px 14px; border-radius: 4px; transition: color 0.2s; letter-spacing: 0.3px; }
-.nav-links a:hover { color: #fff; }
-.nav-cta { background: var(--blue); color: #fff; font-size: 12px; font-weight: 600; padding: 6px 16px; border-radius: 6px; text-decoration: none; transition: all 0.2s; }
-.nav-cta:hover { background: #0052ab; }
+.nav-wordmark {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px; font-weight: 600;
+  color: var(--white); text-decoration: none;
+  letter-spacing: 0.5px;
+}
+.nav-wordmark em { color: var(--gold); font-style: normal; }
+.nav-menu { display: flex; align-items: center; gap: 2.5rem; list-style: none; }
+.nav-menu a {
+  font-size: 11px; font-weight: 500; letter-spacing: 1.5px;
+  text-transform: uppercase; color: #888; text-decoration: none;
+  transition: color 0.2s;
+}
+.nav-menu a:hover { color: var(--white); }
+.nav-hire {
+  font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+  color: var(--gold); border: 1px solid var(--gold);
+  padding: 6px 18px; text-decoration: none; border-radius: 2px;
+  transition: all 0.2s;
+}
+.nav-hire:hover { background: var(--gold); color: var(--dark); }
 
-/* HERO — TWO COLUMN */
-.hero {
-  margin-top: 52px;
-  background: var(--white);
-  border-bottom: 3px solid var(--blue);
+/* MASTHEAD */
+.masthead {
+  margin-top: 50px;
+  background: var(--dark);
+  padding: 0;
+  position: relative; overflow: hidden;
 }
-.hero-inner {
-  max-width: 1060px; margin: 0 auto;
-  display: grid; grid-template-columns: 1fr 380px;
-  gap: 0;
+.masthead::after {
+  content: '';
+  position: absolute; bottom: 0; left: 0; right: 0;
+  height: 1px; background: linear-gradient(to right, transparent, var(--gold), transparent);
 }
-.hero-left {
-  padding: 56px 52px 56px 52px;
-  border-right: 1px solid var(--border);
+.masthead-grid {
+  display: grid; grid-template-columns: 1fr 340px;
+  max-width: 1080px; margin: 0 auto;
 }
-.hero-eyebrow {
-  font-size: 10px; font-weight: 700; letter-spacing: 3px;
-  text-transform: uppercase; color: var(--blue);
-  margin-bottom: 1rem;
-  display: flex; align-items: center; gap: 8px;
+.masthead-left {
+  padding: 72px 56px 64px 56px;
+  border-right: 1px solid #222;
+  position: relative;
 }
-.hero-eyebrow::after { content: ''; flex: 1; height: 1px; background: var(--border); }
-.hero-name {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(2.2rem, 4vw, 3rem);
-  font-weight: 700; color: var(--dark);
-  letter-spacing: -0.5px; line-height: 1.1;
-  margin-bottom: 0.5rem;
-}
-.hero-title {
-  font-size: 15px; font-weight: 500; color: var(--blue);
-  margin-bottom: 1.5rem; letter-spacing: 0.2px;
-}
-.hero-summary {
-  font-size: 13.5px; color: var(--muted); line-height: 1.8;
-  max-width: 480px; margin-bottom: 2rem;
-  border-left: 3px solid var(--blue);
-  padding-left: 1rem;
-}
-.hero-badges { display: flex; flex-wrap: wrap; gap: 6px; }
-.hero-badge {
-  font-size: 11px; font-weight: 500; color: var(--blue);
-  background: var(--blue-light); padding: 4px 12px;
-  border-radius: 4px; letter-spacing: 0.2px;
-}
-
-.hero-right {
-  padding: 56px 40px;
-  background: var(--bg);
-}
-.info-group { margin-bottom: 1.75rem; }
-.info-label {
-  font-size: 10px; font-weight: 700; letter-spacing: 2px;
-  text-transform: uppercase; color: var(--muted);
-  margin-bottom: 0.5rem;
-}
-.info-item {
-  display: flex; align-items: center; gap: 10px;
-  margin-bottom: 6px; font-size: 13px; color: var(--text);
-}
-.info-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--blue); flex-shrink: 0; }
-.info-item a { color: var(--blue); text-decoration: none; font-weight: 500; }
-.info-item a:hover { text-decoration: underline; }
-.stats-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.5rem; }
-.stat-box {
-  background: var(--white); border: 1px solid var(--border);
-  border-radius: 8px; padding: 1rem; text-align: center;
-  border-top: 3px solid var(--blue);
-}
-.stat-num { font-size: 1.6rem; font-weight: 700; color: var(--dark); line-height: 1; margin-bottom: 4px; }
-.stat-lbl { font-size: 10px; color: var(--muted); font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; }
-
-/* MAIN LAYOUT */
-.main {
-  max-width: 1060px; margin: 2.5rem auto;
-  display: grid; grid-template-columns: 1fr 320px;
-  gap: 2rem; padding: 0 2rem;
-}
-
-/* CARDS */
-.card {
-  background: var(--white); border: 1px solid var(--border);
-  border-radius: 10px; overflow: hidden;
-  margin-bottom: 1.5rem;
-}
-.card-header {
-  padding: 1.25rem 1.75rem;
-  border-bottom: 1px solid var(--border);
+.masthead-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px; font-weight: 500; letter-spacing: 3px;
+  text-transform: uppercase; color: var(--gold);
+  margin-bottom: 2rem;
   display: flex; align-items: center; gap: 12px;
-  background: var(--white);
 }
-.card-header-bar {
-  width: 4px; height: 20px; background: var(--blue); border-radius: 2px; flex-shrink: 0;
+.masthead-label::before { content: '—'; }
+.masthead-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 300; color: var(--white);
+  letter-spacing: -1px; line-height: 0.95;
+  margin-bottom: 1.25rem;
 }
-.card-title { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--dark); }
-.card-body { padding: 1.75rem; }
+.masthead-name strong { font-weight: 600; display: block; }
+.masthead-role {
+  font-size: 13px; font-weight: 400; letter-spacing: 0.5px;
+  color: #888; margin-bottom: 2rem;
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+}
+.masthead-role-sep { color: var(--gold); }
+.masthead-desc {
+  font-size: 14px; color: #aaa; line-height: 1.9; max-width: 460px;
+  font-weight: 300;
+}
+.masthead-desc strong { color: var(--gold); font-weight: 500; }
+
+.masthead-right {
+  padding: 56px 44px;
+  display: flex; flex-direction: column; gap: 2rem;
+}
+.mast-info-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #555; margin-bottom: 10px;
+}
+.mast-info-item {
+  display: flex; align-items: baseline; gap: 10px;
+  margin-bottom: 7px; font-size: 12px; color: #999;
+}
+.mast-info-item a { color: #ccc; text-decoration: none; transition: color 0.2s; }
+.mast-info-item a:hover { color: var(--gold); }
+.mast-info-prefix { color: var(--gold); font-family: 'DM Mono', monospace; font-size: 10px; }
+
+.mast-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: #222; margin-top: auto; }
+.mast-stat {
+  background: var(--charcoal); padding: 1.25rem;
+  text-align: center;
+}
+.mast-stat-n {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.2rem; font-weight: 600;
+  color: var(--white); line-height: 1; margin-bottom: 4px;
+}
+.mast-stat-n sub { font-size: 1.2rem; color: var(--gold); vertical-align: baseline; }
+.mast-stat-l { font-size: 10px; color: #666; letter-spacing: 1px; text-transform: uppercase; }
+
+/* LAYOUT */
+.page {
+  max-width: 1080px; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr 300px;
+  gap: 0; align-items: start;
+  padding: 0 0 4rem;
+}
+.page-main { padding: 3rem 3rem 3rem 0; border-right: 1px solid var(--line); }
+.page-aside { padding: 3rem 0 3rem 2.5rem; }
+
+/* SECTION */
+.section { margin-bottom: 3.5rem; }
+.section-head {
+  display: flex; align-items: center; gap: 12px;
+  margin-bottom: 2rem;
+}
+.section-line { flex: 1; height: 1px; background: var(--line); }
+.section-title {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px; font-weight: 500; letter-spacing: 3px;
+  text-transform: uppercase; color: var(--muted);
+  white-space: nowrap;
+}
 
 /* EXPERIENCE */
-.exp-item { padding-bottom: 2rem; margin-bottom: 2rem; border-bottom: 1px solid var(--border); position: relative; }
+.exp-item { margin-bottom: 2.75rem; padding-bottom: 2.75rem; border-bottom: 1px solid var(--line); }
 .exp-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-.exp-row { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 3px; }
-.exp-company { font-weight: 700; font-size: 15px; color: var(--dark); }
-.exp-period { font-size: 11px; color: var(--white); background: var(--blue); padding: 3px 10px; border-radius: 4px; font-weight: 600; white-space: nowrap; }
-.exp-period.current { background: #027a48; }
-.exp-role { font-size: 13px; font-weight: 600; color: var(--blue); margin-bottom: 2px; }
-.exp-location { font-size: 11px; color: var(--muted); margin-bottom: 0.75rem; }
+.exp-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; flex-wrap: wrap; margin-bottom: 2px; }
+.exp-company {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.35rem; font-weight: 600;
+  color: var(--ink); letter-spacing: -0.3px;
+}
+.exp-badge {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px; letter-spacing: 1.5px; font-weight: 500;
+  padding: 4px 12px; border-radius: 2px;
+  text-transform: uppercase; white-space: nowrap;
+}
+.exp-badge.now { background: var(--gold); color: var(--dark); }
+.exp-badge.past { background: transparent; color: var(--muted); border: 1px solid var(--line); }
+.exp-role { font-size: 12px; font-weight: 600; color: var(--blue); letter-spacing: 0.3px; margin-bottom: 2px; }
+.exp-meta { font-size: 11px; color: var(--faint); margin-bottom: 1rem; }
 .exp-points { list-style: none; }
 .exp-points li {
-  font-size: 13px; color: var(--text); padding: 3px 0 3px 16px;
-  position: relative; line-height: 1.6;
+  font-size: 13px; color: var(--text); padding: 3.5px 0 3.5px 18px;
+  position: relative; line-height: 1.7; font-weight: 300;
 }
-.exp-points li::before { content: '▸'; position: absolute; left: 0; color: var(--blue); font-size: 10px; top: 5px; }
-.exp-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 0.75rem; }
-.exp-tag { font-size: 10px; color: var(--muted); background: var(--bg); border: 1px solid var(--border); padding: 2px 8px; border-radius: 3px; }
+.exp-points li::before {
+  content: '';
+  position: absolute; left: 0; top: 11px;
+  width: 8px; height: 1px; background: var(--gold);
+}
+.exp-chips { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+.exp-chip { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.5px; color: var(--muted); background: var(--bg); border: 1px solid var(--line); padding: 3px 9px; border-radius: 2px; }
 
-/* SIDEBAR */
-.sidebar-card { background: var(--white); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; margin-bottom: 1.5rem; }
-.sidebar-header {
-  padding: 1rem 1.25rem;
-  border-bottom: 1px solid var(--border);
-  display: flex; align-items: center; gap: 10px;
-}
-.sidebar-title { font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--dark); }
-.sidebar-body { padding: 1.25rem; }
+/* ASIDE SECTIONS */
+.aside-block { margin-bottom: 2.5rem; }
+.aside-block:last-child { margin-bottom: 0; }
 
 /* SKILLS */
-.skill-section { margin-bottom: 1.25rem; }
-.skill-section:last-child { margin-bottom: 0; }
-.skill-section-name { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--muted); margin-bottom: 8px; }
-.skill-pills { display: flex; flex-wrap: wrap; gap: 5px; }
-.skill-pill { font-size: 11px; font-weight: 500; padding: 4px 10px; border-radius: 4px; border: 1px solid var(--border); color: var(--text); background: var(--bg); }
-.skill-pill.primary { background: var(--blue-light); border-color: #bee3f8; color: var(--blue); font-weight: 600; }
+.skill-group { margin-bottom: 1.5rem; }
+.skill-group:last-child { margin-bottom: 0; }
+.skill-group-name {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px; letter-spacing: 2px; text-transform: uppercase;
+  color: var(--faint); margin-bottom: 8px;
+}
+.skill-items { display: flex; flex-wrap: wrap; gap: 5px; }
+.skill-tag {
+  font-size: 11px; font-weight: 400; padding: 4px 10px;
+  border-radius: 2px; border: 1px solid var(--line);
+  color: var(--text); background: var(--white); transition: all 0.15s;
+}
+.skill-tag:hover { border-color: var(--gold); color: var(--gold); }
+.skill-tag.key { background: var(--gold-light); border-color: #e2c97a; color: #7a5a1a; font-weight: 500; }
 
 /* CERT */
-.cert-item { display: flex; align-items: flex-start; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.cert-item { display: flex; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line); align-items: flex-start; }
 .cert-item:last-child { border-bottom: none; padding-bottom: 0; }
-.cert-bullet { width: 28px; height: 28px; background: var(--blue-light); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 13px; flex-shrink: 0; }
-.cert-name { font-size: 12px; font-weight: 600; color: var(--dark); margin-bottom: 2px; }
-.cert-issuer { font-size: 11px; color: var(--muted); }
+.cert-mark {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem; color: var(--gold); flex-shrink: 0; line-height: 1.4;
+}
+.cert-name { font-size: 12px; font-weight: 500; color: var(--ink); margin-bottom: 2px; }
+.cert-from { font-size: 10px; color: var(--muted); font-family: 'DM Mono', monospace; letter-spacing: 0.5px; }
 
-/* CONTACT LINKS */
-.contact-link { display: flex; align-items: center; gap: 10px; padding: 9px 0; border-bottom: 1px solid var(--border); text-decoration: none; transition: all 0.15s; }
-.contact-link:last-child { border-bottom: none; }
-.contact-link:hover .contact-link-label { color: var(--blue); }
-.contact-icon { width: 28px; height: 28px; background: var(--bg); border: 1px solid var(--border); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 13px; flex-shrink: 0; }
-.contact-link-meta { }
-.contact-link-type { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
-.contact-link-label { font-size: 12px; font-weight: 600; color: var(--dark); }
+/* CONTACT */
+.contact-item { display: flex; align-items: baseline; gap: 10px; padding: 9px 0; border-bottom: 1px solid var(--line); }
+.contact-item:last-child { border-bottom: none; }
+.contact-key { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--faint); width: 60px; flex-shrink: 0; }
+.contact-val { font-size: 12px; font-weight: 400; }
+.contact-val a { color: var(--ink); text-decoration: none; transition: color 0.15s; }
+.contact-val a:hover { color: var(--gold); }
 
 /* EDU */
-.edu-item { padding: 10px 0; border-bottom: 1px solid var(--border); }
-.edu-item:last-child { border-bottom: none; padding-bottom: 0; }
-.edu-uni { font-size: 12px; font-weight: 700; color: var(--dark); margin-bottom: 2px; }
-.edu-degree { font-size: 11px; color: var(--muted); }
-.edu-year { font-size: 10px; color: var(--blue); font-weight: 600; margin-top: 2px; }
+.edu-name { font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-weight: 600; color: var(--ink); margin-bottom: 3px; }
+.edu-deg { font-size: 11px; color: var(--muted); line-height: 1.5; }
+.edu-yr { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--gold); letter-spacing: 1px; margin-top: 4px; }
+
+/* OPEN TO */
+.open-to-box {
+  background: var(--gold-light); border: 1px solid #e2c97a;
+  border-left: 3px solid var(--gold);
+  border-radius: 3px; padding: 1rem;
+}
+.open-to-title { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+.open-to-roles { list-style: none; }
+.open-to-roles li { font-size: 11px; color: var(--ink); padding: 2px 0; font-weight: 500; }
+.open-to-roles li::before { content: '· '; color: var(--gold); }
 
 /* FOOTER */
 footer {
-  background: var(--dark); color: #64748b;
-  text-align: center; padding: 2rem;
-  font-size: 12px; margin-top: 2rem;
+  border-top: 1px solid var(--line);
+  background: var(--dark);
+  padding: 2rem 3rem;
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 1rem;
 }
-footer a { color: #60a5fa; text-decoration: none; }
-footer p + p { margin-top: 6px; }
+.footer-brand { font-family: 'Cormorant Garamond', serif; font-size: 15px; color: #666; }
+.footer-brand em { color: var(--gold); font-style: normal; }
+.footer-links { display: flex; gap: 2rem; }
+.footer-links a { font-size: 11px; color: #555; text-decoration: none; letter-spacing: 0.5px; transition: color 0.2s; }
+.footer-links a:hover { color: var(--gold); }
+.footer-kw { width: 100%; font-family: 'DM Mono', monospace; font-size: 9px; color: #333; letter-spacing: 1px; text-align: center; }
 
-/* PRINT */
-@media print {
-  nav, .nav-cta { display: none; }
-  body { background: white; font-size: 12px; }
-  .main { grid-template-columns: 1fr 280px; }
-  .card, .sidebar-card { box-shadow: none; }
+/* ANIMATIONS */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
+.masthead-name { animation: fadeUp 0.8s ease both; }
+.masthead-role { animation: fadeUp 0.8s 0.15s ease both; }
+.masthead-desc { animation: fadeUp 0.8s 0.3s ease both; }
 
 /* RESPONSIVE */
-@media (max-width: 820px) {
-  .hero-inner { grid-template-columns: 1fr; }
-  .hero-right { border-top: 1px solid var(--border); }
-  .main { grid-template-columns: 1fr; padding: 0 1rem; }
-  .nav-links { display: none; }
-  .hero-left { padding: 40px 24px; }
-  .hero-right { padding: 32px 24px; }
+@media (max-width: 860px) {
+  .masthead-grid { grid-template-columns: 1fr; }
+  .masthead-right { border-top: 1px solid #222; }
+  .page { grid-template-columns: 1fr; }
+  .page-main { padding: 2rem 1.5rem; border-right: none; border-bottom: 1px solid var(--line); }
+  .page-aside { padding: 2rem 1.5rem; }
+  nav { padding: 0 1.5rem; }
+  .nav-menu { display: none; }
 }
 </style>
 </head>
@@ -237,357 +300,344 @@ footer p + p { margin-top: 6px; }
 
 <!-- NAV -->
 <nav>
-  <a class="nav-logo" href="#">Saurav <span>Srivastav</span></a>
-  <div class="nav-right">
-    <ul class="nav-links">
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-    </ul>
-    <a href="https://www.linkedin.com/in/sauravsrivastav2205/" class="nav-cta" target="_blank">Hire Me</a>
-  </div>
+  <a class="nav-wordmark" href="#">Saurav <em>Srivastav</em></a>
+  <ul class="nav-menu">
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#certifications">Credentials</a></li>
+    <li><a href="https://saurav-srivastav-portfolio.vercel.app" target="_blank">Portfolio ↗</a></li>
+  </ul>
+  <a class="nav-hire" href="mailto:sauravsrivastav2205@gmail.com">Hire Me</a>
 </nav>
 
-<!-- HERO -->
-<div class="hero">
-  <div class="hero-inner">
-    <div class="hero-left">
-      <div class="hero-eyebrow">Professional Profile</div>
-      <h1 class="hero-name">Saurav Srivastav</h1>
-      <div class="hero-title">Cloud & DevSecOps Leader &nbsp;·&nbsp; DevOps Manager at Emirates Flight Catering &nbsp;·&nbsp; Dubai, UAE</div>
-      <p class="hero-summary">
-        12+ years leading enterprise cloud platforms, DevSecOps, identity security, and AI infrastructure across Azure, AKS, Kubernetes, Microsoft Entra ID, Intune, Microsoft 365, Zero Trust, Terraform, SRE, and LLMOps — across UAE aviation, fintech, and global enterprise environments.
+<!-- MASTHEAD -->
+<div class="masthead">
+  <div class="masthead-grid">
+    <div class="masthead-left">
+      <div class="masthead-label">Cloud & DevSecOps Leader</div>
+      <h1 class="masthead-name">
+        Saurav
+        <strong>Srivastav</strong>
+      </h1>
+      <div class="masthead-role">
+        <span>DevOps Manager</span>
+        <span class="masthead-role-sep">×</span>
+        <span>Emirates Flight Catering</span>
+        <span class="masthead-role-sep">×</span>
+        <span>Dubai, UAE</span>
+      </div>
+      <p class="masthead-desc">
+        <strong>12+ years</strong> building enterprise-grade Azure cloud platforms, Kubernetes infrastructure, identity security, and AI-powered automation. Expert in <strong>Zero Trust</strong>, <strong>Microsoft Entra ID</strong>, <strong>AKS</strong>, <strong>Terraform</strong>, and <strong>Azure AI Foundry</strong> — across UAE aviation, fintech, and global enterprise.
       </p>
-      <div class="hero-badges">
-        <span class="hero-badge">Azure</span>
-        <span class="hero-badge">Microsoft Entra ID</span>
-        <span class="hero-badge">AKS · Kubernetes</span>
-        <span class="hero-badge">Zero Trust</span>
-        <span class="hero-badge">Terraform</span>
-        <span class="hero-badge">SRE</span>
-        <span class="hero-badge">MLOps · LLMOps</span>
-        <span class="hero-badge">Azure AI Foundry</span>
-      </div>
     </div>
-    <div class="hero-right">
-      <div class="info-group">
-        <div class="info-label">Contact</div>
-        <div class="info-item"><div class="info-dot"></div><a href="mailto:sauravsrivastav2205@gmail.com">sauravsrivastav2205@gmail.com</a></div>
-        <div class="info-item"><div class="info-dot"></div><a href="https://wa.me/971503984885">+971 503 984 885</a></div>
-        <div class="info-item"><div class="info-dot"></div><a href="https://www.linkedin.com/in/sauravsrivastav2205/" target="_blank">linkedin.com/in/sauravsrivastav2205</a></div>
-        <div class="info-item"><div class="info-dot"></div><a href="https://github.com/SauravSrivastav" target="_blank">github.com/SauravSrivastav</a></div>
-        <div class="info-item"><div class="info-dot"></div><a href="https://saurav-srivastav-portfolio.vercel.app" target="_blank">Portfolio →</a></div>
+    <div class="masthead-right">
+      <div>
+        <div class="mast-info-label">Contact</div>
+        <div class="mast-info-item"><span class="mast-info-prefix">@</span><a href="mailto:sauravsrivastav2205@gmail.com">sauravsrivastav2205@gmail.com</a></div>
+        <div class="mast-info-item"><span class="mast-info-prefix">☎</span><a href="https://wa.me/971503984885">+971 503 984 885</a></div>
+        <div class="mast-info-item"><span class="mast-info-prefix">in</span><a href="https://www.linkedin.com/in/sauravsrivastav2205/" target="_blank">sauravsrivastav2205</a></div>
+        <div class="mast-info-item"><span class="mast-info-prefix">gh</span><a href="https://github.com/SauravSrivastav" target="_blank">SauravSrivastav</a></div>
+        <div class="mast-info-item"><span class="mast-info-prefix">↗</span><a href="https://saurav-srivastav-portfolio.vercel.app" target="_blank">Portfolio</a></div>
       </div>
-      <div class="info-group">
-        <div class="info-label">Location</div>
-        <div class="info-item"><div class="info-dot"></div>Dubai, United Arab Emirates</div>
-      </div>
-      <div class="stats-row">
-        <div class="stat-box"><div class="stat-num">12+</div><div class="stat-lbl">Years Exp.</div></div>
-        <div class="stat-box"><div class="stat-num">1M+</div><div class="stat-lbl">Daily Txns</div></div>
-        <div class="stat-box"><div class="stat-num">50+</div><div class="stat-lbl">Prod. Apps</div></div>
-        <div class="stat-box"><div class="stat-num">3</div><div class="stat-lbl">Cloud Platforms</div></div>
+      <div class="mast-stats">
+        <div class="mast-stat"><div class="mast-stat-n">12<sub>+</sub></div><div class="mast-stat-l">Years</div></div>
+        <div class="mast-stat"><div class="mast-stat-n">1M<sub>+</sub></div><div class="mast-stat-l">Daily Txns</div></div>
+        <div class="mast-stat"><div class="mast-stat-n">50<sub>+</sub></div><div class="mast-stat-l">Prod Apps</div></div>
+        <div class="mast-stat"><div class="mast-stat-n">3</div><div class="mast-stat-l">Clouds</div></div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- MAIN -->
-<div class="main">
+<!-- BODY -->
+<div class="page">
 
-  <!-- LEFT COLUMN -->
-  <div>
+  <!-- MAIN -->
+  <main class="page-main" id="experience">
 
-    <!-- EXPERIENCE -->
-    <div class="card" id="experience">
-      <div class="card-header">
-        <div class="card-header-bar"></div>
-        <div class="card-title">Work Experience</div>
+    <div class="section">
+      <div class="section-head">
+        <span class="section-title">Work Experience</span>
+        <div class="section-line"></div>
       </div>
-      <div class="card-body">
 
-        <div class="exp-item">
-          <div class="exp-row">
-            <div class="exp-company">Emirates Flight Catering</div>
-            <div class="exp-period current">Nov 2023 — Present</div>
-          </div>
-          <div class="exp-role">DevOps Manager</div>
-          <div class="exp-location">Dubai, United Arab Emirates</div>
-          <ul class="exp-points">
-            <li>Lead cloud, DevSecOps, platform engineering, identity, endpoint security, and AI platform initiatives for aviation-scale enterprise technology systems</li>
-            <li>Designed and operated Entra ID, Conditional Access, MFA, FIDO2, Temporary Access Pass, and Zero Trust security controls at enterprise scale</li>
-            <li>Manage Intune endpoint policies — App Protection Policies, application control, allowlisting, and Windows upgrade reporting</li>
-            <li>Built and remediated Azure DevOps CI/CD pipelines for production applications across critical systems</li>
-            <li>Automated Microsoft 365 and Microsoft Graph workflows for identity, security, reporting, and operational integration</li>
-            <li>Supported cloud cost, license governance, and inactive-user reclamation using compliance-safe preservation patterns</li>
-            <li>Translated technical incidents and platform risks into clear AVP/VP-level stakeholder communication</li>
-          </ul>
-          <div class="exp-tags">
-            <span class="exp-tag">Azure</span><span class="exp-tag">AKS</span><span class="exp-tag">Entra ID</span>
-            <span class="exp-tag">Intune</span><span class="exp-tag">M365</span><span class="exp-tag">Zero Trust</span>
-            <span class="exp-tag">Azure AI Foundry</span><span class="exp-tag">Container Apps</span><span class="exp-tag">Front Door</span><span class="exp-tag">PostgreSQL</span>
-          </div>
+      <div class="exp-item">
+        <div class="exp-top">
+          <div class="exp-company">Emirates Flight Catering</div>
+          <span class="exp-badge now">Present</span>
         </div>
-
-        <div class="exp-item">
-          <div class="exp-row">
-            <div class="exp-company">Noon Payments</div>
-            <div class="exp-period">Aug 2022 — Nov 2023</div>
-          </div>
-          <div class="exp-role">DevSecOps Lead</div>
-          <div class="exp-location">Dubai, United Arab Emirates</div>
-          <ul class="exp-points">
-            <li>Designed Kubernetes-based microservices architecture supporting 1M+ daily transactions across UAE payments workloads</li>
-            <li>Automated Azure and GCP infrastructure provisioning using Terraform and ARM templates</li>
-            <li>Built end-to-end CI/CD pipelines with automated testing, security scanning, and compliance checks</li>
-            <li>Standardized DevSecOps practices across build, deploy, and runtime workflows for engineering teams</li>
-          </ul>
-          <div class="exp-tags">
-            <span class="exp-tag">Kubernetes</span><span class="exp-tag">AKS</span><span class="exp-tag">GCP</span>
-            <span class="exp-tag">Terraform</span><span class="exp-tag">DevSecOps</span><span class="exp-tag">CI/CD</span><span class="exp-tag">MongoDB</span>
-          </div>
+        <div class="exp-role">DevOps Manager</div>
+        <div class="exp-meta">Nov 2023 — Present &nbsp;·&nbsp; Dubai, United Arab Emirates</div>
+        <ul class="exp-points">
+          <li>Lead cloud, DevSecOps, platform engineering, identity, endpoint security, and AI platform initiatives for aviation-scale enterprise systems</li>
+          <li>Designed and operated Entra ID, Conditional Access, MFA, FIDO2, Temporary Access Pass, and Zero Trust security controls at enterprise scale</li>
+          <li>Manage Intune endpoint policies — App Protection Policies, application control, allowlisting, and Windows upgrade reporting</li>
+          <li>Built and remediated Azure DevOps CI/CD pipelines for production applications across critical systems</li>
+          <li>Automated Microsoft 365 and Microsoft Graph workflows for identity, security, reporting, and operational integration</li>
+          <li>Translated technical incidents and platform risks into clear AVP/VP-level stakeholder communication</li>
+        </ul>
+        <div class="exp-chips">
+          <span class="exp-chip">Azure</span><span class="exp-chip">AKS</span><span class="exp-chip">Entra ID</span>
+          <span class="exp-chip">Intune</span><span class="exp-chip">M365</span><span class="exp-chip">Zero Trust</span>
+          <span class="exp-chip">AI Foundry</span><span class="exp-chip">Container Apps</span><span class="exp-chip">PostgreSQL</span>
         </div>
-
-        <div class="exp-item">
-          <div class="exp-row">
-            <div class="exp-company">Lowe's India</div>
-            <div class="exp-period">Jan 2021 — Aug 2022</div>
-          </div>
-          <div class="exp-role">Senior Infrastructure Engineer</div>
-          <div class="exp-location">Bengaluru, India</div>
-          <ul class="exp-points">
-            <li>Architected and operated microservices platforms using Kubernetes, Istio, and Rancher for 50+ production applications</li>
-            <li>Introduced GitOps delivery with ArgoCD for deployment consistency and rollback control</li>
-            <li>Established centralized logging, monitoring, and alerting practices to improve production reliability</li>
-            <li>Automated infrastructure provisioning with Terraform, reducing manual configuration at scale</li>
-          </ul>
-          <div class="exp-tags">
-            <span class="exp-tag">Kubernetes</span><span class="exp-tag">Istio</span><span class="exp-tag">ArgoCD</span>
-            <span class="exp-tag">GitOps</span><span class="exp-tag">Rancher</span><span class="exp-tag">SRE</span><span class="exp-tag">Terraform</span>
-          </div>
-        </div>
-
-        <div class="exp-item">
-          <div class="exp-row">
-            <div class="exp-company">HCL Technologies</div>
-            <div class="exp-period">May 2019 — Jan 2021</div>
-          </div>
-          <div class="exp-role">Cloud & DevOps Consultant</div>
-          <div class="exp-location">Noida, India</div>
-          <ul class="exp-points">
-            <li>Delivered cloud and DevOps consulting across enterprise clients on Azure, AWS, and GCP</li>
-            <li>Developed and operated AKS, GKE, and EKS clusters via Terraform, ARM templates, and Ansible</li>
-            <li>Implemented CI/CD pipelines using Jenkins, Spinnaker, and Azure DevOps</li>
-          </ul>
-          <div class="exp-tags">
-            <span class="exp-tag">AKS</span><span class="exp-tag">GKE</span><span class="exp-tag">EKS</span>
-            <span class="exp-tag">Terraform</span><span class="exp-tag">Jenkins</span><span class="exp-tag">Ansible</span>
-          </div>
-        </div>
-
-        <div class="exp-item">
-          <div class="exp-row">
-            <div class="exp-company">Accenture</div>
-            <div class="exp-period">Mar 2018 — Apr 2019</div>
-          </div>
-          <div class="exp-role">Cloud & DevOps Consultant</div>
-          <div class="exp-location">Gurgaon, India</div>
-          <ul class="exp-points">
-            <li>Delivered Azure DevOps, Docker, and Kubernetes patterns for a Dynamics CRM 365 banking modernization</li>
-            <li>Converted legacy monolith delivery into containerized microservices, improving scalability and deployment speed</li>
-          </ul>
-          <div class="exp-tags">
-            <span class="exp-tag">Azure DevOps</span><span class="exp-tag">Docker</span>
-            <span class="exp-tag">Kubernetes</span><span class="exp-tag">Dynamics 365</span>
-          </div>
-        </div>
-
-        <div class="exp-item">
-          <div class="exp-row">
-            <div class="exp-company">Wipro Limited</div>
-            <div class="exp-period">Sep 2015 — Feb 2018</div>
-          </div>
-          <div class="exp-role">Project Engineer</div>
-          <div class="exp-location">Bengaluru, India</div>
-          <ul class="exp-points">
-            <li>Built Microsoft Dynamics 365 solutions and migrated on-premises systems to Azure VMs, SQL, and App Service</li>
-            <li>Developed SSIS packages and SQL Server workflows for data migration, reporting, and integration</li>
-          </ul>
-          <div class="exp-tags">
-            <span class="exp-tag">Azure</span><span class="exp-tag">SQL Server</span>
-            <span class="exp-tag">Dynamics 365</span><span class="exp-tag">SSIS</span>
-          </div>
-        </div>
-
       </div>
+
+      <div class="exp-item">
+        <div class="exp-top">
+          <div class="exp-company">Noon Payments</div>
+          <span class="exp-badge past">Aug 2022 — Nov 2023</span>
+        </div>
+        <div class="exp-role">DevSecOps Lead</div>
+        <div class="exp-meta">Dubai, United Arab Emirates</div>
+        <ul class="exp-points">
+          <li>Designed Kubernetes microservices architecture supporting 1M+ daily transactions across UAE payments workloads</li>
+          <li>Automated Azure and GCP infrastructure using Terraform and ARM templates, improving deployment consistency</li>
+          <li>Built end-to-end CI/CD pipelines with automated testing, security scanning, and compliance checks</li>
+          <li>Standardized DevSecOps practices across build, deploy, and runtime workflows for engineering teams</li>
+        </ul>
+        <div class="exp-chips">
+          <span class="exp-chip">Kubernetes</span><span class="exp-chip">AKS</span><span class="exp-chip">GCP</span>
+          <span class="exp-chip">Terraform</span><span class="exp-chip">DevSecOps</span><span class="exp-chip">CI/CD</span>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-top">
+          <div class="exp-company">Lowe's India</div>
+          <span class="exp-badge past">Jan 2021 — Aug 2022</span>
+        </div>
+        <div class="exp-role">Senior Infrastructure Engineer</div>
+        <div class="exp-meta">Bengaluru, India</div>
+        <ul class="exp-points">
+          <li>Architected and operated microservices platforms using Kubernetes, Istio, and Rancher for 50+ production applications</li>
+          <li>Introduced GitOps delivery with ArgoCD for deployment consistency and rollback control</li>
+          <li>Automated infrastructure provisioning with Terraform; established centralized observability practices</li>
+        </ul>
+        <div class="exp-chips">
+          <span class="exp-chip">Kubernetes</span><span class="exp-chip">Istio</span><span class="exp-chip">ArgoCD</span>
+          <span class="exp-chip">GitOps</span><span class="exp-chip">Rancher</span><span class="exp-chip">SRE</span>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-top">
+          <div class="exp-company">HCL Technologies</div>
+          <span class="exp-badge past">May 2019 — Jan 2021</span>
+        </div>
+        <div class="exp-role">Cloud & DevOps Consultant</div>
+        <div class="exp-meta">Noida, India</div>
+        <ul class="exp-points">
+          <li>Delivered cloud and DevOps consulting across enterprise clients on Azure, AWS, and GCP</li>
+          <li>Developed and operated AKS, GKE, and EKS clusters via Terraform, ARM templates, and Ansible</li>
+          <li>Implemented CI/CD pipelines using Jenkins, Spinnaker, and Azure DevOps</li>
+        </ul>
+        <div class="exp-chips">
+          <span class="exp-chip">AKS</span><span class="exp-chip">GKE</span><span class="exp-chip">EKS</span>
+          <span class="exp-chip">Terraform</span><span class="exp-chip">Jenkins</span>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-top">
+          <div class="exp-company">Accenture</div>
+          <span class="exp-badge past">Mar 2018 — Apr 2019</span>
+        </div>
+        <div class="exp-role">Cloud & DevOps Consultant</div>
+        <div class="exp-meta">Gurgaon, India</div>
+        <ul class="exp-points">
+          <li>Delivered Azure DevOps, Docker, and Kubernetes for a Dynamics CRM 365 banking modernization program</li>
+          <li>Converted legacy monolith delivery into containerized microservices patterns</li>
+        </ul>
+        <div class="exp-chips">
+          <span class="exp-chip">Azure DevOps</span><span class="exp-chip">Docker</span><span class="exp-chip">Kubernetes</span>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-top">
+          <div class="exp-company">Wipro Limited</div>
+          <span class="exp-badge past">Sep 2015 — Feb 2018</span>
+        </div>
+        <div class="exp-role">Project Engineer</div>
+        <div class="exp-meta">Bengaluru, India</div>
+        <ul class="exp-points">
+          <li>Built Microsoft Dynamics 365 solutions and migrated on-premises systems to Azure VMs, SQL, and App Service</li>
+          <li>Developed SSIS packages and SQL Server workflows for data migration and reporting</li>
+        </ul>
+        <div class="exp-chips">
+          <span class="exp-chip">Azure</span><span class="exp-chip">SQL Server</span><span class="exp-chip">Dynamics 365</span>
+        </div>
+      </div>
+
     </div>
+  </main>
 
-  </div>
+  <!-- ASIDE -->
+  <aside class="page-aside">
 
-  <!-- RIGHT SIDEBAR -->
-  <div>
-
-    <!-- SKILLS -->
-    <div class="sidebar-card" id="skills">
-      <div class="sidebar-header">
-        <div class="card-header-bar"></div>
-        <div class="sidebar-title">Technical Skills</div>
+    <div class="aside-block" id="skills">
+      <div class="section-head">
+        <span class="section-title">Skills</span>
+        <div class="section-line"></div>
       </div>
-      <div class="sidebar-body">
-        <div class="skill-section">
-          <div class="skill-section-name">Cloud & Identity</div>
-          <div class="skill-pills">
-            <span class="skill-pill primary">Microsoft Azure</span>
-            <span class="skill-pill primary">Entra ID</span>
-            <span class="skill-pill primary">Microsoft Intune</span>
-            <span class="skill-pill primary">Microsoft 365</span>
-            <span class="skill-pill primary">Azure AI Foundry</span>
-            <span class="skill-pill">AWS</span>
-            <span class="skill-pill">GCP</span>
-            <span class="skill-pill">Container Apps</span>
-            <span class="skill-pill">Azure Front Door</span>
-          </div>
+      <div class="skill-group">
+        <div class="skill-group-name">Cloud & Identity</div>
+        <div class="skill-items">
+          <span class="skill-tag key">Microsoft Azure</span>
+          <span class="skill-tag key">Entra ID</span>
+          <span class="skill-tag key">Intune</span>
+          <span class="skill-tag key">Microsoft 365</span>
+          <span class="skill-tag key">AI Foundry</span>
+          <span class="skill-tag">AWS</span>
+          <span class="skill-tag">GCP</span>
         </div>
-        <div class="skill-section">
-          <div class="skill-section-name">Security & Zero Trust</div>
-          <div class="skill-pills">
-            <span class="skill-pill primary">Zero Trust</span>
-            <span class="skill-pill primary">Conditional Access</span>
-            <span class="skill-pill primary">PIM</span>
-            <span class="skill-pill">FIDO2 / Passwordless</span>
-            <span class="skill-pill">Microsoft Graph</span>
-            <span class="skill-pill">HashiCorp Vault</span>
-            <span class="skill-pill">Azure Key Vault</span>
-          </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-name">Security & Zero Trust</div>
+        <div class="skill-items">
+          <span class="skill-tag key">Zero Trust</span>
+          <span class="skill-tag key">Conditional Access</span>
+          <span class="skill-tag key">PIM</span>
+          <span class="skill-tag">FIDO2</span>
+          <span class="skill-tag">Microsoft Graph</span>
+          <span class="skill-tag">HashiCorp Vault</span>
         </div>
-        <div class="skill-section">
-          <div class="skill-section-name">Containers & Orchestration</div>
-          <div class="skill-pills">
-            <span class="skill-pill primary">Kubernetes</span>
-            <span class="skill-pill primary">AKS · GKE · EKS</span>
-            <span class="skill-pill">Docker</span>
-            <span class="skill-pill">Helm</span>
-            <span class="skill-pill">ArgoCD</span>
-            <span class="skill-pill">Istio</span>
-            <span class="skill-pill">GitOps</span>
-          </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-name">Containers & Orchestration</div>
+        <div class="skill-items">
+          <span class="skill-tag key">Kubernetes</span>
+          <span class="skill-tag">AKS · GKE · EKS</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">Helm</span>
+          <span class="skill-tag">ArgoCD</span>
+          <span class="skill-tag">Istio</span>
+          <span class="skill-tag">GitOps</span>
         </div>
-        <div class="skill-section">
-          <div class="skill-section-name">IaC & CI/CD</div>
-          <div class="skill-pills">
-            <span class="skill-pill primary">Terraform</span>
-            <span class="skill-pill">Ansible</span>
-            <span class="skill-pill">ARM Templates</span>
-            <span class="skill-pill">Azure DevOps</span>
-            <span class="skill-pill">GitHub Actions</span>
-            <span class="skill-pill">Jenkins</span>
-          </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-name">IaC & CI/CD</div>
+        <div class="skill-items">
+          <span class="skill-tag key">Terraform</span>
+          <span class="skill-tag">Ansible</span>
+          <span class="skill-tag">ARM Templates</span>
+          <span class="skill-tag">Azure DevOps</span>
+          <span class="skill-tag">GitHub Actions</span>
+          <span class="skill-tag">Jenkins</span>
         </div>
-        <div class="skill-section">
-          <div class="skill-section-name">Observability & SRE</div>
-          <div class="skill-pills">
-            <span class="skill-pill">Prometheus</span>
-            <span class="skill-pill">Grafana</span>
-            <span class="skill-pill">Azure Monitor</span>
-            <span class="skill-pill">SLO / SLI</span>
-            <span class="skill-pill">PostgreSQL</span>
-          </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-name">AI & MLOps</div>
+        <div class="skill-items">
+          <span class="skill-tag key">Azure AI Foundry</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">LangChain</span>
+          <span class="skill-tag">LLMOps</span>
+          <span class="skill-tag">Streamlit</span>
         </div>
-        <div class="skill-section">
-          <div class="skill-section-name">AI & MLOps</div>
-          <div class="skill-pills">
-            <span class="skill-pill primary">Azure AI Foundry</span>
-            <span class="skill-pill">Python</span>
-            <span class="skill-pill">LangChain</span>
-            <span class="skill-pill">LLMOps</span>
-            <span class="skill-pill">Streamlit</span>
-            <span class="skill-pill">OpenAI</span>
-          </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-name">Observability & SRE</div>
+        <div class="skill-items">
+          <span class="skill-tag">Prometheus</span>
+          <span class="skill-tag">Grafana</span>
+          <span class="skill-tag">Azure Monitor</span>
+          <span class="skill-tag">SLO / SLI</span>
+          <span class="skill-tag">PostgreSQL</span>
         </div>
       </div>
     </div>
 
-    <!-- CERTIFICATIONS -->
-    <div class="sidebar-card" id="certifications">
-      <div class="sidebar-header">
-        <div class="card-header-bar"></div>
-        <div class="sidebar-title">Certifications</div>
+    <div class="aside-block" id="certifications">
+      <div class="section-head">
+        <span class="section-title">Certifications</span>
+        <div class="section-line"></div>
       </div>
-      <div class="sidebar-body">
-        <div class="cert-item">
-          <div class="cert-bullet">🎖️</div>
-          <div><div class="cert-name">MCSA: Cloud Platform</div><div class="cert-issuer">Microsoft — 2018</div></div>
-        </div>
-        <div class="cert-item">
-          <div class="cert-bullet">🤖</div>
-          <div><div class="cert-name">Intro to Large Language Models</div><div class="cert-issuer">Google</div></div>
-        </div>
-        <div class="cert-item">
-          <div class="cert-bullet">📊</div>
-          <div><div class="cert-name">Intro to Data and Data Science</div><div class="cert-issuer">365 Data Science</div></div>
-        </div>
-        <div class="cert-item">
-          <div class="cert-bullet">⚙️</div>
-          <div><div class="cert-name">Microsoft Dynamics 365 — Exam 716</div><div class="cert-issuer">Microsoft</div></div>
-        </div>
+      <div class="cert-item">
+        <div class="cert-mark">I</div>
+        <div><div class="cert-name">MCSA: Cloud Platform</div><div class="cert-from">Microsoft · 2018</div></div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-mark">II</div>
+        <div><div class="cert-name">Intro to Large Language Models</div><div class="cert-from">Google</div></div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-mark">III</div>
+        <div><div class="cert-name">Intro to Data & Data Science</div><div class="cert-from">365 Data Science</div></div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-mark">IV</div>
+        <div><div class="cert-name">Microsoft Dynamics 365 — Exam 716</div><div class="cert-from">Microsoft</div></div>
       </div>
     </div>
 
-    <!-- EDUCATION -->
-    <div class="sidebar-card">
-      <div class="sidebar-header">
-        <div class="card-header-bar"></div>
-        <div class="sidebar-title">Education</div>
+    <div class="aside-block">
+      <div class="section-head">
+        <span class="section-title">Education</span>
+        <div class="section-line"></div>
       </div>
-      <div class="sidebar-body">
-        <div class="edu-item">
-          <div class="edu-uni">Jaypee University of Information Technology</div>
-          <div class="edu-degree">B.Tech — Electrical, Electronics & Communications Engineering</div>
-          <div class="edu-year">2011 — 2015</div>
-        </div>
+      <div class="edu-name">Jaypee University of Information Technology</div>
+      <div class="edu-deg">B.Tech — Electrical, Electronics & Communications Engineering</div>
+      <div class="edu-yr">2011 — 2015</div>
+    </div>
+
+    <div class="aside-block">
+      <div class="section-head">
+        <span class="section-title">Open To</span>
+        <div class="section-line"></div>
+      </div>
+      <div class="open-to-box">
+        <div class="open-to-title">Available Now · UAE & Remote</div>
+        <ul class="open-to-roles">
+          <li>Senior Cloud Engineer</li>
+          <li>DevSecOps Architect</li>
+          <li>Platform Engineering Lead</li>
+          <li>Azure Consultant</li>
+          <li>AI Infrastructure Lead</li>
+        </ul>
       </div>
     </div>
 
-    <!-- CONTACT -->
-    <div class="sidebar-card">
-      <div class="sidebar-header">
-        <div class="card-header-bar"></div>
-        <div class="sidebar-title">Get In Touch</div>
+    <div class="aside-block">
+      <div class="section-head">
+        <span class="section-title">Contact</span>
+        <div class="section-line"></div>
       </div>
-      <div class="sidebar-body">
-        <a href="https://www.linkedin.com/in/sauravsrivastav2205/" class="contact-link" target="_blank">
-          <div class="contact-icon">💼</div>
-          <div class="contact-link-meta"><div class="contact-link-type">LinkedIn</div><div class="contact-link-label">sauravsrivastav2205</div></div>
-        </a>
-        <a href="mailto:sauravsrivastav2205@gmail.com" class="contact-link">
-          <div class="contact-icon">✉️</div>
-          <div class="contact-link-meta"><div class="contact-link-type">Email</div><div class="contact-link-label">sauravsrivastav2205@gmail.com</div></div>
-        </a>
-        <a href="https://wa.me/971503984885" class="contact-link" target="_blank">
-          <div class="contact-icon">📱</div>
-          <div class="contact-link-meta"><div class="contact-link-type">WhatsApp</div><div class="contact-link-label">+971 503 984 885</div></div>
-        </a>
-        <a href="https://github.com/SauravSrivastav" class="contact-link" target="_blank">
-          <div class="contact-icon">🐙</div>
-          <div class="contact-link-meta"><div class="contact-link-type">GitHub</div><div class="contact-link-label">SauravSrivastav</div></div>
-        </a>
-        <a href="https://saurav-srivastav-portfolio.vercel.app" class="contact-link" target="_blank">
-          <div class="contact-icon">🌐</div>
-          <div class="contact-link-meta"><div class="contact-link-type">Portfolio</div><div class="contact-link-label">View Live Site →</div></div>
-        </a>
+      <div class="contact-item">
+        <span class="contact-key">Email</span>
+        <span class="contact-val"><a href="mailto:sauravsrivastav2205@gmail.com">sauravsrivastav2205<br>@gmail.com</a></span>
+      </div>
+      <div class="contact-item">
+        <span class="contact-key">Phone</span>
+        <span class="contact-val"><a href="https://wa.me/971503984885">+971 503 984 885</a></span>
+      </div>
+      <div class="contact-item">
+        <span class="contact-key">LinkedIn</span>
+        <span class="contact-val"><a href="https://www.linkedin.com/in/sauravsrivastav2205/" target="_blank">sauravsrivastav2205</a></span>
+      </div>
+      <div class="contact-item">
+        <span class="contact-key">GitHub</span>
+        <span class="contact-val"><a href="https://github.com/SauravSrivastav" target="_blank">SauravSrivastav</a></span>
+      </div>
+      <div class="contact-item">
+        <span class="contact-key">Web</span>
+        <span class="contact-val"><a href="https://saurav-srivastav-portfolio.vercel.app" target="_blank">Portfolio ↗</a></span>
       </div>
     </div>
 
-  </div>
+  </aside>
 </div>
 
 <footer>
-  <p>Saurav Srivastav &nbsp;·&nbsp; Cloud & DevSecOps Leader &nbsp;·&nbsp; Dubai, UAE &nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="https://saurav-srivastav-portfolio.vercel.app">Portfolio</a> &nbsp;·&nbsp;
-    <a href="https://github.com/SauravSrivastav">GitHub</a> &nbsp;·&nbsp;
-    <a href="https://www.linkedin.com/in/sauravsrivastav2205/">LinkedIn</a>
-  </p>
-  <p style="margin-top:6px;font-size:11px;color:#334155">Azure · Entra ID · Kubernetes · Zero Trust · Terraform · SRE · MLOps · Dubai UAE</p>
+  <div class="footer-brand">Saurav <em>Srivastav</em> &nbsp;·&nbsp; Dubai, UAE</div>
+  <div class="footer-links">
+    <a href="https://saurav-srivastav-portfolio.vercel.app" target="_blank">Portfolio</a>
+    <a href="https://github.com/SauravSrivastav" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/sauravsrivastav2205/" target="_blank">LinkedIn</a>
+    <a href="mailto:sauravsrivastav2205@gmail.com">Email</a>
+  </div>
+  <div class="footer-kw">Azure · Entra ID · Kubernetes · Zero Trust · Terraform · SRE · MLOps · Dubai UAE · Cloud Security</div>
 </footer>
 
 </body>
