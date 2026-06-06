@@ -209,7 +209,7 @@ nav{
 .edu-degree{font-size:13px;color:var(--muted)}
 
 /* CONTACT */
-.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.contact-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem}.contact-grid .contact-card{flex:1;min-width:220px;max-width:280px}
 .contact-card{
   background:var(--surface);border:1px solid var(--border);
   border-radius:12px;padding:1.25rem;
@@ -223,7 +223,7 @@ nav{
   background:rgba(0,120,212,0.1);border:1px solid rgba(0,120,212,0.15);
 }
 .contact-lbl{font-size:11px;color:var(--muted);margin-bottom:3px;text-transform:uppercase;letter-spacing:0.5px}
-.contact-val{font-size:13px;font-weight:600;color:#fff}
+.contact-val{font-size:13px;font-weight:600;color:#fff;white-space:nowrap}
 
 /* FOOTER */
 footer{
@@ -576,7 +576,7 @@ footer a:hover{color:var(--accent)}
       </a>
       <a href="https://wa.me/971503984885" class="contact-card" target="_blank">
         <div class="contact-icon-wrap">📱</div>
-        <div><div class="contact-lbl">WhatsApp</div><div class="contact-val">+971 503 984 885</div></div>
+        <div><div class="contact-lbl">WhatsApp</div><div class="contact-val">+971 503984885</div></div>
       </a>
       <a href="https://github.com/SauravSrivastav" class="contact-card" target="_blank">
         <div class="contact-icon-wrap">🐙</div>
